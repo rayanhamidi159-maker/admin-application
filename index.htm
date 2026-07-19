@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <style>
+    body {background:#0a0a0a;color:white;font-family:Arial;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+    .login-box {background:#1a1a1a;padding:40px;border-radius:15px;box-shadow:0 0 20px #3b82f6;width:320px;text-align:center}
+    h1 {color:#3b82f6;margin-bottom:25px}
+    input {width:100%;padding:12px;margin:10px 0;border:none;border-radius:8px;background:#2a2a2a;color:white;font-size:16px}
+    button {width:100%;padding:12px;background:#3b82f6;border:none;border-radius:8px;color:white;font-size:16px;font-weight:bold;cursor:pointer;margin-top:15px}
+    button:hover {background:#2563eb}
+    #error {color:red;margin-top:10px;display:none}
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>ADMIN LOGIN</h1>
+    <form onsubmit="login(event)">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+      <p id="error">Email ou mot de passe incorrect</p>
+    </form>
+  </div>
+
+<script>
+function login(e){
+  e.preventDefault();
+  let email = document.getElementById('email').value;
+  let password = document.getElementById('password').value;
+  
+  if(email == "admin@test.com" && password == "123456"){
+    alert("Bienvenue Admin!");
+    window.location.href = "dashboard.html";
+  } else {
+    document.getElementById('error').style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
