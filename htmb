@@ -1,0 +1,43 @@
+<!DOCTYPE htmb>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلب انضمام</title>
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box}
+    body{font-family:'Tahoma'; background:linear-gradient(135deg,#1e3c72,#2a5298); display:flex; justify-content:center; align-items:center; min-height:100vh; padding:20px}
+    .box{background:white; padding:40px 30px; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.3); width:400px; text-align:center}
+    .logo{font-size:40px; font-weight:bold; color:#2a5298; margin-bottom:10px}
+    h2{color:#333; margin-bottom:10px}
+    p{color:#666; font-size:14px; margin-bottom:20px}
+    input, textarea{width:100%; padding:14px; margin:10px 0; border:2px solid #eee; border-radius:8px; font-size:15px; outline:none; font-family:'Tahoma'}
+    input:focus, textarea:focus{border-color:#2a5298}
+    button{width:100%; padding:14px; background:#2a5298; color:white; border:none; border-radius:8px; font-size:16px; font-weight:bold; cursor:pointer; margin-top:10px}
+    button:hover{background:#1e3c72}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="logo">G</div>
+    <h2>طلب انضمام</h2>
+    <p>عمر المعلومات ديالك وغادي نتواصلو معاك</p>
+
+    <form action="https://formspree.io/f/xbdnozqq" method="POST">
+      
+      <input type="text" name="الاسم" placeholder="الاسم الكامل" required>
+      
+      <input type="email" name="الايميل" placeholder="example@gmail.com" required>
+      
+      <input type="tel" name="رقم الهاتف" placeholder="06xxxxxxxx" required>
+      
+      <textarea name="الرسالة" placeholder="علاش باغي تنضم لينا..." rows="3"></textarea>
+      
+      <input type="hidden" name="_subject" value="طلب جديد من الموقع">
+      
+      <button type="submit">ارسال الطلب</button>
+    </form>
+    
+  </div>
+</body>
+</html>
