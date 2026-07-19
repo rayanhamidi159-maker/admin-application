@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة التسجيل</title>
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box}
+    body{font-family:'Tahoma'; background:linear-gradient(135deg,#667eea,#764ba2); display:flex; justify-content:center; align-items:center; height:100vh}
+    .box{background:white; padding:40px 30px; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.2); width:350px; text-align:center}
+    h2{color:#333; margin-bottom:10px}
+    p{color:#666; font-size:14px; margin-bottom:20px}
+    input{width:100%; padding:14px; margin:10px 0; border:2px solid #eee; border-radius:8px; font-size:15px; outline:none}
+    input:focus{border-color:#667eea}
+    button{width:100%; padding:14px; background:#667eea; color:white; border:none; border-radius:8px; font-size:16px; font-weight:bold; cursor:pointer; margin-top:10px}
+    button:hover{background:#5568d3}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>مرحبا بيك 👋</h2>
+    <p>دخل الايميل ديالك باش توصلك العروض</p>
+
+    <form action="https://formspree.io/f/xbdnozqq" method="POST">
+      
+      <input type="email" name="email" placeholder="example@gmail.com" required>
+      
+      <input type="hidden" name="_subject" value="مشترك جديد وصل">
+      
+      <button type="submit">سجل دابا</button>
+    </form>
+    
+  </div>
+</body>
+</html>
